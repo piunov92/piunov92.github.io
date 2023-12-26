@@ -66,9 +66,14 @@ body {
 .nav-bar__divider {
     height: 32px;
     border: 2px #EAEAEA solid;
-    margin-right: 0.75rem;
+    /* margin-right: 0.75rem; */
+    margin-right: 1rem;
     margin-left: 1rem;
     border-radius: 1px;
+  }
+
+  .nav-bar__divider--middle-sc {
+    display: none; 
   }
 
 .container__shadow {
@@ -196,4 +201,23 @@ body {
 .section__main-picture {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .nav-bar__divider--middle-sc {
+        display: block;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem; 
+    }
+    .nav-bar__divider--small-sc {
+        display: none;
+    }
+
+    .nav-bar__logo--margins {
+        margin-left: 0;
+    }
+
+    .nav-bar__ref--middle-sc-margins {
+        margin-left: 0;
+    }
 }
