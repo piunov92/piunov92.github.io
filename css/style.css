@@ -115,6 +115,10 @@ body {
     letter-spacing: -0.6px;
 }
 
+.header-main__nav {
+    display: none;
+}
+
 .slide-bar {
     display: flex;
     flex-wrap: nowrap;
@@ -201,7 +205,12 @@ body {
     margin-bottom: 1rem;
 }
 
-.section__main-picture--meddle-sc {
+.section__main-picture--middle-sc,
+.section__main-picture--large-sc {
+    display: none;
+}
+
+.section__paragraph--middle-sc {
     display: none;
 }
 
@@ -230,6 +239,14 @@ body {
         margin-left: 0;
     }
 
+    .header-main__highlight {
+        margin-right: 1rem;
+    }
+
+    .header-main__nav {
+        display: none;
+    }
+
     .section {
         flex-direction: row;
     }
@@ -238,20 +255,78 @@ body {
         display: block;
     }
 
-    .section__main-picture--meddle-sc {
+    .section__main-picture--middle-sc {
         display: block;
         margin-top: 0;
     }
 
-    .section__main-picture--small-sc {
+    .section__main-picture--small-sc,
+    .section__main-picture--large-sc {
         display: none;
     }
 
     .section__paragraph--middle-sc {
+        display: block;
         padding-top: 1rem;   
+    }
+
+    .section__paragraph--large-sc {
+        display: none;
     }
 }
 
 @media (min-width: 1120px) {
     
+    .container__header,
+    .container__shadow {
+        display: none;
+    }
+
+    .header-main {
+        margin-top: 42px;
+    }
+
+    .header-main__highlight {
+        margin-right: 1rem;
+    }
+
+    .header-main__nav {
+        display: flex;
+    }
+
+    .header-main__nav--text {
+        color: #1B1C21;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        text-wrap: nowrap;
+        align-items: center;
+    }
+
+    .header-main__nav-img {
+        margin-left: 0.57rem;
+    }
+
+    .header-main__nav-img {
+        margin-right: 2rem;
+    }
+
+    .slide-bar {
+        flex-wrap: wrap;
+        overflow-x: unset;
+    }
+
+    .section__paragraph--large-sc {
+        display: block;
+    }
+
+    .section__main-picture--middle-sc {
+        display: none;
+    }
+
+    .section__main-picture--large-sc {
+        display: block;
+        margin-top: 0;
+    }
 }
