@@ -315,6 +315,7 @@ body {
     }
 
     .header-main__nav-btn {
+        cursor: pointer;
         background-color: inherit;
         border: none;
     }
