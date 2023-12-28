@@ -94,6 +94,9 @@ body {
 
 .header-main {
     display: flex;
+}
+
+.header-main--dim {
     margin-top: 5%;
 }
 
@@ -124,10 +127,13 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    margin-top: 1.5rem;
-    margin-left: 1rem;
     align-items: center;
     flex-basis: content;
+}
+
+.slide-bar--dim {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
 }
 
 .slide-bar::-webkit-scrollbar {
@@ -162,8 +168,12 @@ body {
     flex: 1 1 auto;
 }
 
+.section--dim {
+    margin-top: 1.5rem;
+    height: 1rem;
+}
+
 .section__text {
-    /* display: flex; */
     max-width: 50em;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -289,7 +299,7 @@ body {
         display: none;
     }
 
-    .header-main {
+    .header-main--margins {
         margin-top: 42px;
     }
 
