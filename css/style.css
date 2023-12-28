@@ -297,7 +297,8 @@ body {
         margin-right: 1rem;
     }
 
-    .header-main__nav {
+    .header-main__nav,
+    .header-main__nav-text {
         display: flex;
     }
 
@@ -311,6 +312,11 @@ body {
         letter-spacing: -0.2px;
         text-wrap: nowrap;
         align-items: center;
+    }
+
+    .header-main__nav-btn {
+        background-color: inherit;
+        border: none;
     }
 
     .header-main__nav-img {
